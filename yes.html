@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Workout Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="left">             
+            <div class="calendar">
+                <div class="month">
+                    <i class="fa fa-angle-left prev"></i> 
+                    <div class="date"></div> 
+                    <i class="fa fa-angle-right next"></i>
+                </div>
+
+                
+                <div class="weekdays">
+                    <div>sun</div>
+                    <div>mon</div>
+                    <div>tue</div>
+                    <div>wed</div>
+                    <div>thu</div>
+                    <div>fri</div>
+                    <div>sat</div>
+                </div>
+                <div class="days">
+                </div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input">
+                        <button class="goto-btn" >go</button>
+                    </div>
+                    <button class="today-btn">today</button>
+                </div>
+            </div>
+        </div>
+          <div class="right event-panel hidden">
+            <h3>Workouts for <span class="selected-date"></span></h3>
+            
+            <textarea class="event-input" placeholder="Add your workout here..."></textarea>
+            
+            <div class="saved-event-container hidden">
+                <ul class="saved-event-list"></ul>
+            </div>
+        
+            <div class="event-buttons">
+                <button class="save-event">Save Workout</button>
+                <button class="delete-event">Delete All Workouts</button>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
